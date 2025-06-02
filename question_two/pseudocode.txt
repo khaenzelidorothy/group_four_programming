@@ -2,28 +2,18 @@ Input
     - Flight details: id, priority, type (landing/takeoff), status (emergency/VIP/diverted/regular)
     - Weather forecast: condition (sunny, storm, fog), date
     - Emergency buffer list (initially empty)
+
 Process
-    1. Create a list called `scheduledFlights` combining both landing and takeoff flight data.
-    2. Check each flight:
-        - If emergency or diverted → assign highest priority (0).
-        - If VIP → assign high priority (1).
-        - If regular → assign default priority (2 or 3).
-        - If weather is poor (e.g. storm or fog), increase priority value for non-emergency flights (to delay).
-    3. Insert all flights into a priority queue sorted by priority value.
-    4. While the queue is not empty:
-        - Pop the highest-priority flight.
-        - If weather conditions allow the flight:
-            - Process (takeoff or land).
-            - Log "Processed flight ID: X".
-        - If not:
-            - Delay flight, update its time, and reinsert into the queue.
-        - If emergency buffer is needed, move the flight to emergency buffer.
-    5. Once all main flights are processed:
-        - Loop through emergency buffer:
-            - If weather is safe, process each flight and log it.
+1.Create a list of scheduledFlights that has both landing and takeoff  flights.
+2.Each flight in the list will have the id,type and status of the flight
+2.For each flight in scheduledFlights list if the status of  the flight is an emergency set its priority to high,
+3.If  the weather is rainy change the priority to high.
+4.Arrange the flights in the scheduledFlights list from highest to lowest priority.
+5.After arranging the flights according to priority check if the weather is not rainy then process the flight.
+6.Print the ordered list of the priority flights.
+
 Output
-    - Ordered log of all flights processed: ID, type (landing/takeoff), priority, and status.
-    - Separate log of emergency buffer usage (if any).
+    - Ordered list of all flights processed: ID, type (landing/takeoff), priority, and status.
 
 
 
