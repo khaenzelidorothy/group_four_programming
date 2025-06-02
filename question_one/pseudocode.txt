@@ -1,3 +1,4 @@
+
 Input: Lists of user preferences and attraction sites.
 
 Process
@@ -25,5 +26,6 @@ Process
 
 Output
 Name of the attraction site, category, and the crowd levels
+
 
 
