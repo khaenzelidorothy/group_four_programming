@@ -4,26 +4,26 @@ Input
     - Emergency buffer list (initially empty)
 Process
     1. Create a list called `scheduledFlights` combining both landing and takeoff flight data.
-    2. Check each flight:
-        - If emergency or diverted → assign highest priority (0).
+    2. Confirm each flight:
+        - If emergency or diverted, → assign highest priority (0).
         - If VIP → assign high priority (1).
         - If regular → assign default priority (2 or 3).
-        - If weather is poor (e.g. storm or fog), increase priority value for non-emergency flights (to delay).
+        - If the weather is poor (e.g., storm or fog), increase priority value for non-emergency flights (to delay).
     3. Insert all flights into a priority queue sorted by priority value.
-    4. While the queue is not empty:
-        - Pop the highest-priority flight.
+    4. With the condition that the queue is not empty:
+        - Remove the highest-priority flight.
         - If weather conditions allow the flight:
             - Process (takeoff or land).
             - Log "Processed flight ID: X".
         - If not:
             - Delay flight, update its time, and reinsert into the queue.
-        - If emergency buffer is needed, move the flight to emergency buffer.
+        - If the emergency buffer is needed, move the flight to the emergency buffer.
     5. Once all main flights are processed:
-        - Loop through emergency buffer:
-            - If weather is safe, process each flight and log it.
+        -Go through the emergency buffer:
+            - If the weather is safe, process each flight and print it.
 Output
-    - Ordered log of all flights processed: ID, type (landing/takeoff), priority, and status.
-    - Separate log of emergency buffer usage (if any).
+    - Ordered output of all flights processed: ID, type (landing/takeoff), priority, and status.
+    - Separate the output of emergency buffer usage if there is any.
 
 
 
