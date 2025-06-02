@@ -18,4 +18,4 @@ Create a program that suggests items to users according to their most recent sea
 **#Group members**
 1. Fionah Wesonga
 2. Dorothy Mbakaya
-3.Ushi Adhiambo
+3. Ushi Adhiambo
