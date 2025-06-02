@@ -9,7 +9,7 @@ Process
 4. For each flight in the scheduledFlights list, if the status of  the flight is an emergency, set its priority to high.
 5. If  the weather is rainy, change the priority to high.
 6 . Arrange the flights in the scheduledFlights list from highest to lowest priority.
-7  .After arranging the flights according to priority, check if the weather is not rainy,then process the flight.
+7  . After arranging the flights according to priority, check if the weather is not rainy,then process the flight.
 8. Print the ordered list of the priority flights.
 
 Output
