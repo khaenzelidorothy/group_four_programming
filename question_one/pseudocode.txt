@@ -1,17 +1,29 @@
-Input-userpreferences: interests and budget
-     -event details:date, location
-     -weather forecast: date, condition
+Input: Lists of user preferences and attraction sites.
 
 Process
-Create a variable attractions that takes in the details of attractions as a dictionary id, name of attraction, category and crowdlevels.
-create a function that takes in userpreferences as parameter, and check if the userpreferences is contained in the attractions variable.
-Create another variable that holds the events date, location and event name.
-create a function that takes in users date as parameter, and check if the date provided matches the dates on the variable event.
-Create a function that checks if the crowdlevels is high and if the weather is rainy and return it's not favourable to travel.
-Create another function, create an empty list that will hold the suggestions provided. Loop through the function and for every date in travel_date add to the empty list.
-Loop through attractions and add the available attraction in the list return the list.
+1. Create a list of attraction sites.
+
+2 . Each attraction in the list gives it a name, the ID, the category, and the crowd level at the attraction.
+
+3. Create another list that comprises preferences
+
+4. Create an empty list that will hold the results after matching the attraction sites and user preferences.
+
+5 . For each attraction that is in the attraction list, compare if the details match with the preferences.
+
+6. If they match, add the attraction to the empty results list you had created.
+
+7. Create another list of events with and on the events, describe their date, location, and event name.
+
+8. For every event in the event list, compare if the date matches the date in the user preferences list.
+
+9. If they match, add the event to the result list you had created.
+
+10. After checking and matching all the lists, display the final results list.
+
+11 .The result list will suggest to the tourist how to plan their itinerary according to their preferences.
 
 Output
-name of the attraction site, category and the crowdlevels
+Name of the attraction site, category, and the crowd levels
 
 
