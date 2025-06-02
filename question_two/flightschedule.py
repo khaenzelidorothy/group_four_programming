@@ -1,4 +1,4 @@
-import heapq
+
 class Flight:
     def __init__(self, id, priority, type):
         self.id = id
