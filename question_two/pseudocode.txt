@@ -1,32 +1,16 @@
 Input
     - Flight details: id, priority, type (landing/takeoff), status (emergency/VIP/diverted/regular)
-    - Weather forecast: condition (sunny, storm, fog), date
+    - Weather forecast: condition (sunny, storm, fog).
     - Emergency buffer list (initially empty)
+
 Process
-    1. Create a list called `scheduledFlights` combining both landing and takeoff flight data.
-    2. Confirm each flight:
-        - If emergency or diverted, → assign highest priority (0).
-        - If VIP → assign high priority (1).
-        - If regular → assign default priority (2 or 3).
-        - If the weather is poor (e.g., storm or fog), increase priority value for non-emergency flights (to delay).
-    3. Insert all flights into a priority queue sorted by priority value.
-    4. With the condition that the queue is not empty:
-        - Remove the highest-priority flight.
-        - If weather conditions allow the flight:
-            - Process (takeoff or land).
-            - Log "Processed flight ID: X".
-        - If not:
-            - Delay flight, update its time, and reinsert into the queue.
-        - If the emergency buffer is needed, move the flight to the emergency buffer.
-    5. Once all main flights are processed:
-        -Go through the emergency buffer:
-            - If the weather is safe, process each flight and print it.
+1. Create a list of scheduled flights that have both landing and takeoff  flights.
+2. Each flight in the list will have the ID, type, and status of the flight
+4. For each flight in the scheduledFlights list, if the status of  the flight is an emergency, set its priority to high.
+5. If  the weather is rainy, change the priority to high.
+6 . Arrange the flights in the scheduledFlights list from highest to lowest priority.
+7  .After arranging the flights according to priority, check if the weather is not rainy,then process the flight.
+8. Print the ordered list of the priority flights.
+
 Output
-    - Ordered output of all flights processed: ID, type (landing/takeoff), priority, and status.
-    - Separate the output of emergency buffer usage if there is any.
-
-
-
-
-
-
+    - Ordered list of all flights processed: ID, type (landing/takeoff), priority, and status.
