@@ -12,6 +12,8 @@ Develop a comprehensive program to schedule the landing and takeoff of flights a
 
 This project is a flight scheduling system designed for an international airport. It simulates real-time prioritization of flight takeoffs and landings while dynamically accounting for changing weather conditions, emergency scenarios, and efficient operation logistics.
 
+#Question Three
+Create a program that suggests items to the user according to their most recent searches.
 
 #Group members
 1.Fionah Wesonga
