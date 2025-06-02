@@ -1,17 +1,18 @@
-Input-userpreferences: interests and budget
-     -event details:date, location
+Input-userpreferences: 
+     -interests and budget
+     -event details: date, location
      -weather forecast: date, condition
 
 Process
-Create a variable attractions that takes in the details of attractions as a dictionary id, name of attraction, category and crowdlevels.
-create a function that takes in userpreferences as parameter, and check if the userpreferences is contained in the attractions variable.
-Create another variable that holds the events date, location and event name.
-create a function that takes in users date as parameter, and check if the date provided matches the dates on the variable event.
-Create a function that checks if the crowdlevels is high and if the weather is rainy and return it's not favourable to travel.
-Create another function, create an empty list that will hold the suggestions provided. Loop through the function and for every date in travel_date add to the empty list.
-Loop through attractions and add the available attraction in the list return the list.
+Create a variable attractions that takes in the details of attractions as id, name of attraction, category, and crowd levels.
+Create a function that takes in user preferences as a parameter and confirms if the user preferences are contained in the attractions variable.
+Create another variable that holds the event's date, location, and event name.
+Create a function that takes in the user's date as a parameter, and confirms if the date provided matches the dates in the variable event.
+Create a function that confirms if the crowd levels are high and if the weather is rainy, and returns that it is not favourable to travel.
+Create another function, create an empty list that will hold the suggestions provided. Go through the elements in the function, and for every date in travel_date, add it to the empty list.
+Go through the elements in attractions and add the available attractions to the list. Return the list.
 
 Output
-name of the attraction site, category and the crowdlevels
+Name of the attraction site, category, and the crowd levels
 
 
